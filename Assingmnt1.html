@@ -5,148 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Your Name</title>
     <style>
-        /* Basic Reset */
+        /* CSS Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
-            background: #f7f7f7;
+            background: #f1f1f1;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(to right, #1f4037, #99f2c8);
+            background: #333;
             color: white;
+            padding: 40px 0;
             text-align: center;
-            padding: 70px 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            margin-top: 10px;
-            font-size: 1.2rem;
         }
 
         nav {
-            background: #333;
+            background: #444;
+            padding: 15px;
             text-align: center;
-            padding: 15px 0;
         }
 
         nav a {
-            color: #f7f7f7;
+            color: white;
             margin: 0 15px;
             text-decoration: none;
-            font-weight: 500;
-            transition: 0.3s;
+            font-weight: bold;
         }
 
         nav a:hover {
-            color: #99f2c8;
+            color: #f1c40f;
         }
 
         .container {
-            width: 85%;
+            width: 80%;
             max-width: 1200px;
-            margin: 40px auto;
-            animation: slideUp 1.5s ease;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
         }
 
         .section-title {
             font-size: 2rem;
-            margin-bottom: 15px;
-            border-left: 4px solid #76c7c0;
-            padding-left: 10px;
+            margin-bottom: 10px;
+            color: #333;
         }
 
-        p, ul {
-            font-size: 1.05rem;
-            line-height: 1.8;
+        .project {
+            margin-bottom: 20px;
         }
 
-        ul {
-            list-style-type: square;
-            margin-left: 20px;
-        }
-
-        .project-card {
-            background: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 15px 0;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.06);
-            transition: 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
         }
 
         .btn {
             display: inline-block;
             padding: 10px 15px;
-            background: #1f4037;
+            background: #333;
             color: white;
             border-radius: 5px;
             text-decoration: none;
             margin-top: 10px;
-            transition: background 0.3s, transform 0.3s;
         }
 
         .btn:hover {
-            background: #99f2c8;
-            color: #333;
-            transform: scale(1.05);
-        }
-
-        footer {
-            background: #333;
-            color: #ddd;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
+            background: #555;
         }
 
         #topBtn {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: #1f4037;
+            background: #333;
             color: #fff;
-            padding: 12px 16px;
+            padding: 10px 15px;
             border: none;
             border-radius: 50%;
-            font-size: 20px;
+            font-size: 18px;
             display: none;
             cursor: pointer;
-            transition: 0.3s;
-        }
-
-        #topBtn:hover {
-            background: #76c7c0;
-            transform: scale(1.1);
-        }
-
-        /* Keyframe animations */
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
         }
     </style>
 </head>
@@ -166,27 +115,24 @@
 
     <div class="container" id="about">
         <h2 class="section-title">About Me</h2>
-        <p>Hello! I'm a passionate web developer and an aspiring AI engineer. I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I’m not coding, you’ll find me reading tech blogs or exploring open-source projects.</p>
+        <p>Hello! I'm a passionate web developer and an aspiring AI engineer. I focus on building efficient web applications and creating smart solutions using machine learning techniques.</p>
     </div>
 
     <div class="container" id="projects">
         <h2 class="section-title">Projects</h2>
-
-        <div class="project-card">
+        <div class="project">
             <h3>Smart Crop Recommendation (Krishi AI)</h3>
-            <p>AI mobile app that suggests the best crops based on weather and soil data using ML algorithms.</p>
+            <p>AI-based mobile app for farmers to get crop suggestions based on soil and weather data.</p>
             <a href="#" class="btn">View Project</a>
         </div>
-
-        <div class="project-card">
+        <div class="project">
             <h3>Employee Attrition Prediction</h3>
-            <p>Machine learning web application using Streamlit to predict employee turnover probabilities.</p>
+            <p>ML-powered web app to predict chances of employee resignation using Python and Streamlit.</p>
             <a href="#" class="btn">View Project</a>
         </div>
-
-        <div class="project-card">
-            <h3>Patient Medical Data Management System</h3>
-            <p>Full-stack healthcare web system using Python, HTML, CSS, and MySQL for managing patient data securely.</p>
+        <div class="project">
+            <h3>Patient Medical Data System</h3>
+            <p>Full-stack app for managing patient details built using HTML, CSS, Python, and MySQL.</p>
             <a href="#" class="btn">View Project</a>
         </div>
     </div>
@@ -194,10 +140,10 @@
     <div class="container" id="skills">
         <h2 class="section-title">Technical Skills</h2>
         <ul>
-            <li>Languages: Python, Java, C++</li>
-            <li>Web Tech: HTML, CSS, React Native</li>
-            <li>Machine Learning: Pandas, Scikit-learn</li>
-            <li>Tools: Git, GitHub, VS Code, Jupyter Notebook</li>
+            <li>Python, Java, C++</li>
+            <li>HTML, CSS, React Native</li>
+            <li>Machine Learning, Data Analytics</li>
+            <li>Git, GitHub, VS Code, Jupyter</li>
         </ul>
     </div>
 
@@ -209,7 +155,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Your Name. Made with ❤️ and CSS.</p>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
     </footer>
 
     <button id="topBtn" onclick="scrollToTop()">↑</button>
@@ -233,4 +179,4 @@
     </script>
 
 </body>
-</html> 
+</html>
